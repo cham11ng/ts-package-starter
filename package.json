@@ -2,7 +2,7 @@
   "name": "@nimantrana/lib",
   "version": "1.0.0-alpha.1",
   "description": "Mono-repo collection of utils, library, common and interfaces",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "cz",
     "build": "tsc",
