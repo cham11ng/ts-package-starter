@@ -1,6 +1,6 @@
 {
   "name": "@nimantrana/lib",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Mono-repo collection of utils, library, common and interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
