@@ -3,7 +3,7 @@
   "version": "1.0.0-alpha.2",
   "description": "Mono-repo collection of utils, library, common and interfaces",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "commit": "cz",
     "prebuild": "rimraf dist",
