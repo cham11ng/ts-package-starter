@@ -1,4 +1,4 @@
-# @nimantrana/lib
+# @cham11ng/ts-package-starter
 
 Mono-repo collection of utils, library, common and interfaces.
 
@@ -24,11 +24,11 @@ To use packages from the private GitHub registry in your repository.
 
 1. Create `.npmrc` file with scope and registry mapping.
 ```
-@nimantrana:registry=https://npm.pkg.github.com
+@cham11ng:registry=https://npm.pkg.github.com
 ```
 2. Install the package
 ```
-yarn add @nimantrana/lib
+yarn add @cham11ng/ts-package-starter
 ```
 
 ## Publish
