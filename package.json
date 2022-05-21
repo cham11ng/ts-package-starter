@@ -8,6 +8,7 @@
     "commit": "cz",
     "prebuild": "rimraf dist",
     "build": "tsc",
+    "prepublishOnly": "yarn build",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "prepare": "husky install .husky",
