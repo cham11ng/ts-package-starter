@@ -31,8 +31,14 @@ To use packages from the private GitHub registry in your repository.
 yarn add @cham11ng/ts-package-starter
 ```
 
+## Installation
+
+```sh
+pnpm install
+```
+
 ## Publish
 
-```
-yarn publish
+```sh
+pnpm publish
 ```

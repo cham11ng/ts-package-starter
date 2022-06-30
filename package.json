@@ -1,6 +1,6 @@
 {
-  "name": "@nimantrana/lib",
-  "version": "1.0.0-alpha.5",
+  "name": "@cham11ng/ts-package-starter",
+  "version": "1.0.0",
   "description": "Mono-repo collection of utils, library, common and interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,45 +19,42 @@
     "lint:fix": "eslint . --fix --ext ts",
     "prettify": "prettier 'src/**/*.ts' --write",
     "prettier:check": "prettier --list-different 'src/**/*.ts'",
-    "format": "concurrently 'yarn lint:fix' 'yarn prettify'",
+    "format:code": "concurrently 'yarn lint:fix' 'yarn prettify'",
     "doc": " typedoc --out docs --target es6 --theme minimal --mode file src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nimantrana/lib.git"
+    "url": "git+https://github.com/cham11ng/ts-package-starter.git"
   },
   "keywords": [
     "Typescript"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nimantrana/lib/issues"
+    "url": "https://github.com/cham11ng/ts-package-starter/issues"
   },
-  "homepage": "https://github.com/nimantrana/lib#readme",
+  "homepage": "https://github.com/cham11ng/ts-package-starter#readme",
   "devDependencies": {
-    "@babel/core": "^7.18.0",
-    "@babel/preset-env": "^7.18.0",
-    "@babel/preset-typescript": "^7.17.12",
-    "@commitlint/cli": "^17.0.0",
-    "@commitlint/config-conventional": "^17.0.0",
-    "@types/jest": "^27.5.1",
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
-    "@typescript-eslint/parser": "^5.25.0",
-    "babel-jest": "^28.1.0",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/jest": "^27.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
     "commitizen": "^4.2.4",
-    "concurrently": "^7.2.0",
+    "concurrently": "^7.2.2",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.16.0",
+    "eslint": "^8.18.0",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-security": "^1.5.0",
     "husky": "^8.0.1",
-    "jest": "^28.1.0",
-    "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2",
+    "jest": "^28.1.2",
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typedoc": "^0.22.15",
-    "typescript": "^4.6.4"
+    "ts-jest": "^28.0.5",
+    "typedoc": "^0.22.18",
+    "typescript": "^4.7.4"
   },
   "lint-staged": {
     "*.ts": [
@@ -75,6 +72,7 @@
   },
   "jest": {
     "testEnvironment": "node",
+    "preset": "ts-jest",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "coveragePathIgnorePatterns": [
       "/node_modules/",
