@@ -1,6 +1,6 @@
 {
   "name": "@cham11ng/ts-package-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Mono-repo collection of utils, library, common and interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,8 +12,6 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "prepublishOnly": "yarn build",
-    "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
     "prepare": "husky install .husky",
     "lint": "eslint . --ext ts",
     "lint:fix": "eslint . --fix --ext ts",
@@ -37,24 +35,22 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@types/jest": "^27.5.2",
-    "@typescript-eslint/eslint-plugin": "^5.30.0",
-    "@typescript-eslint/parser": "^5.30.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "bun-types": "^1.0.3",
     "commitizen": "^4.2.4",
-    "concurrently": "^7.2.2",
+    "concurrently": "^8.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.18.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-security": "^1.5.0",
     "husky": "^8.0.1",
-    "jest": "^28.1.2",
-    "lint-staged": "^12.5.0",
-    "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^28.0.5",
-    "typedoc": "^0.22.18",
-    "typescript": "^4.7.4"
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "typedoc": "^0.25.1",
+    "typescript": "^5.2.2"
   },
   "lint-staged": {
     "*.ts": [
@@ -69,26 +65,6 @@
     "printWidth": 80,
     "parser": "typescript",
     "tabWidth": 2
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "preset": "ts-jest",
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/tests/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 95,
-        "lines": 95,
-        "statements": 95
-      }
-    },
-    "collectCoverageFrom": [
-      "src/*.{js,ts}"
-    ]
   },
   "config": {
     "commitizen": {

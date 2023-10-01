@@ -16,7 +16,7 @@ Email: (this IS public) <Your email id>
 Logged in as <Your GitHub username> on https://npm.pkg.github.com/.
 ```
 
-3. That's it. :tada: You can now fetch packages from GitHub Registry.
+3. :tada: You can now fetch packages from GitHub Registry.
 
 ## Usage
 
@@ -34,11 +34,11 @@ yarn add @cham11ng/ts-package-starter
 ## Installation
 
 ```sh
-pnpm install
+bun install
 ```
 
 ## Publish
 
 ```sh
-pnpm publish
+yarn publish
 ```

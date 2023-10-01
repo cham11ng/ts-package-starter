@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "es6",
+    "target": "esnext",
     "module": "commonjs",
     "declaration": true,
-    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "types": [
+      "bun-types"
+    ],
+    "lib": [
+      "esnext",
+      "es2017",
+      "esnext.asynciterable"
+    ],
     "sourceMap": true,
     "outDir": "./dist",
     "moduleResolution": "node",
@@ -26,10 +33,16 @@
     "resolveJsonModule": true,
     "baseUrl": "."
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts"
+  ],
   "typedocOptions": {
-    "entryPoints": ["src/index.ts"],
+    "entryPoints": [
+      "src/index.ts"
+    ],
     "out": "docs"
   }
 }
